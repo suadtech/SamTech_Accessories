@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -62,7 +63,10 @@ ROOT_URLCONF = "SamTech_Accessories.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            os.path.join(BASE-DIR, 'teplates'),
+            os.path.join(BASE-DIR, 'teplates','allauth'),
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
