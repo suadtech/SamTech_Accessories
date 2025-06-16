@@ -62,13 +62,13 @@ ROOT_URLCONF = "SamTech_Accessories.urls"
 
 TEMPLATES = [
     {
-        "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [
-            os.path.join(BASE-DIR, 'teplates'),
-            os.path.join(BASE-DIR, 'teplates','allauth'),
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [
+            os.path.join(BASE_DIR, 'teplates'),
+            os.path.join(BASE_DIR, 'teplates','allauth'),
         ],
-        "APP_DIRS": True,
-        "OPTIONS": {
+        'APP_DIRS': True,
+        'OPTIONS': {
             "context_processors": [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth", # required by allauth
